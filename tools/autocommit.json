@@ -7,7 +7,7 @@
   "push_every_min": 30,
   "push_min_commits": 5,
   "max_file_mb": 50,
-  "first_push_confirmed": false,
-  "_first_push_note": "Пока false, push запрещён. Поставь true после того, как решил, что assets/from-regina/ (материалы из личной переписки) можно публиковать и remote создан.",
+  "first_push_confirmed": true,
+  "_first_push_note": "Push включён автором 2026-11-24 (публичный репозиторий, from-regina включён осознанно).",
   "blocked_paths": [".env", ".venv/", "serve.log", "frames/", "Tg-data/", "__pycache__/"]
 }
