@@ -1,0 +1,67 @@
+{
+ "title": "Анимационные эксперименты",
+ "intro": "Хвост, моргание, дыхание, подъём и мерцание свечей: как лежачая сцена оживала. Версии v1 → v3 собраны Python-скриптами из tools/mascot-gen.",
+ "order": 40,
+ "items": [
+  {
+   "file": "blink_strip.png",
+   "title": "Моргание: полоса кадров",
+   "caption": "Ключевые кадры моргания (make-blink.py)."
+  },
+  {
+   "file": "breath_strip.png",
+   "title": "Дыхание: полоса кадров",
+   "caption": "Смещение торса по полю (make-breath.py)."
+  },
+  {
+   "file": "rise_strip.png",
+   "title": "Подъём: полоса кадров",
+   "caption": "Она подтягивается на локте и опускается обратно (make-rise.py), без ИИ."
+  },
+  {
+   "file": "tail_whip_preview.gif",
+   "title": "Хвост: хлыст (первая версия)",
+   "caption": "Ранний вариант виляния хвоста."
+  },
+  {
+   "file": "tail_wag_preview.gif",
+   "title": "Хвост: виляние",
+   "caption": "Волна по хвосту (make-tail-wag.py)."
+  },
+  {
+   "file": "tail_ribbon_preview.gif",
+   "title": "Хвост: лента",
+   "caption": "Хвост как гибкая лента: финальный выбор (make-tail-ribbon.py)."
+  },
+  {
+   "file": "tail_ribbon_strip.png",
+   "title": "Хвост-лента: полоса кадров",
+   "caption": "Кадры цикла хвоста."
+  },
+  {
+   "file": "v1_scene.gif",
+   "title": "Сцена v1 (GIF)",
+   "caption": "Только свечи (хвост был отключён), цикл 4 с."
+  },
+  {
+   "file": "v2_scene.gif",
+   "title": "Сцена v2 (GIF)",
+   "caption": "Хвост-лента, моргание, дыхание, свечи; 240 кадров по 50 мс = 12 с, бесшовный цикл."
+  },
+  {
+   "file": "v2_scene.webp",
+   "title": "Сцена v2 (WebP)",
+   "caption": "Та же v2, в WebP (легче в 4 раза)."
+  },
+  {
+   "file": "v3_scene.gif",
+   "title": "Сцена v3 (GIF)",
+   "caption": "v2 + подъём: она приподнимается на локте. Предшественник PixelLab-сцены."
+  },
+  {
+   "file": "v3_scene.webp",
+   "title": "Сцена v3 (WebP)",
+   "caption": "v3 в WebP."
+  }
+ ]
+}

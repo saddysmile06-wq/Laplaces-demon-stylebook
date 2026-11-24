@@ -1,0 +1,13 @@
+{
+  "_comment": "Настройки автокоммита. Правит человек. Правила — в ai/workflows/autocommit.md.",
+  "enabled": true,
+  "remote": "origin",
+  "branch": "main",
+  "commit_every_min": 15,
+  "push_every_min": 30,
+  "push_min_commits": 5,
+  "max_file_mb": 50,
+  "first_push_confirmed": false,
+  "_first_push_note": "Пока false, push запрещён. Поставь true после того, как решил, что assets/from-regina/ (материалы из личной переписки) можно публиковать и remote создан.",
+  "blocked_paths": [".env", ".venv/", "serve.log", "frames/", "Tg-data/", "__pycache__/"]
+}

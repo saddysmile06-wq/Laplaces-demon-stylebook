@@ -1,0 +1,32 @@
+{
+ "title": "Перерисовка в Aseprite",
+ "intro": "Эксперименты с Aseprite MCP: форма «demon» перерисована в пиксель-арт, 64 кадра, плюс бюст-эксперимент.",
+ "order": 50,
+ "items": [
+  {
+   "file": "demoness.gif",
+   "title": "Demoness (GIF, 64 кадра)",
+   "caption": "Пиксельная перерисовка «бумажной суеты», 378×240."
+  },
+  {
+   "file": "demoness_clean.gif",
+   "title": "Demoness clean (GIF)",
+   "caption": "Очищенная версия: уменьшенный шум палитры."
+  },
+  {
+   "file": "frame_o000.png",
+   "title": "Кадр o000",
+   "caption": "Один из 64 кадров анимации (весь набор лежит в frames/)."
+  },
+  {
+   "file": "bust_compare.png",
+   "title": "Бюст: сравнение",
+   "caption": "Попытка нарисовать бюст-портрет с нуля в Aseprite против исходника."
+  },
+  {
+   "file": "bust_preview.png",
+   "title": "Бюст: превью",
+   "caption": "Итог бюст-эксперимента."
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+Thumbs.db
+desktop.ini
+# личные настройки Claude Code
+.claude/settings.local.json
+# выключатель автокоммита
+.autocommit-off
+serve.log
+# покадровые тяжёлые наборы: воспроизводятся скриптами
+**/frames-big/
+**/out/anim/*/frames/
+# покадровые PNG клипов: tools/export.py восстанавливает их из sheet.png
+assets/clips/*/frames/

@@ -1,0 +1,52 @@
+{
+ "title": "Сцены и загрузочный экран",
+ "intro": "Кадры комнаты, из которых получаются фоны плагина: лежачая демоница между свечами и mecha-версия.",
+ "order": 30,
+ "items": [
+  {
+   "file": "reclining-scene.png",
+   "title": "Лежачая сцена",
+   "caption": "Базовый кадр 872×520: демоница лежит на стопках книг между свечами, черепом и кристаллами. Исходник для анимаций."
+  },
+  {
+   "file": "reclining-scene-wide.png",
+   "title": "Лежачая сцена (шире)",
+   "caption": "Широкий кроп для макетов."
+  },
+  {
+   "file": "room-mecha-no-ui.png",
+   "title": "Mecha-комната без интерфейса",
+   "caption": "Фон mecha-версии без прогресс-бара."
+  },
+  {
+   "file": "scene-reclining.webp",
+   "title": "scene-reclining.webp (в плагине)",
+   "caption": "Анимированная сцена, которую показывает плагин на старте.",
+   "plugin": "public/scene-reclining.webp"
+  },
+  {
+   "file": "scene-mecha.webp",
+   "title": "scene-mecha.webp (в плагине)",
+   "caption": "Mecha-вариант сцены, выбирается случайно.",
+   "plugin": "public/scene-mecha.webp"
+  },
+  {
+   "file": "candle-left.webp",
+   "title": "Свеча слева",
+   "caption": "Отдельный слой мерцающей свечи.",
+   "plugin": "public/candle-left.webp"
+  },
+  {
+   "file": "candle-right.webp",
+   "title": "Свеча справа",
+   "caption": "Отдельный слой мерцающей свечи.",
+   "plugin": "public/candle-right.webp"
+  },
+  {
+   "file": "splash-mascot.webp",
+   "title": "Маскот сплэш-экрана",
+   "caption": "Статичный кадр лежачей сцены, который вшит в код сплэша.",
+   "plugin": "src/frontend/shared/ui/startup-splash/mascot.webp"
+  }
+ ]
+}

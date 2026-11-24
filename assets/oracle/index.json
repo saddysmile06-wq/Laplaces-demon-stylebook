@@ -1,0 +1,52 @@
+{
+ "title": "Оракул: спрайты и раскадровка",
+ "intro": "Слои и раскадровка сценки «Лаплас проверяет судьбу». Готовая анимация лежит как клип: assets/clips/oracle-v3/. Покадровые слои не хранятся: пересобираются из sprites/ через pipeline/oracle-v3/build.py.",
+ "order": 80,
+ "items": [
+  {
+   "file": "sprites/table.png",
+   "title": "Стол",
+   "caption": "Элемент сцены с общим холстом 480×270."
+  },
+  {
+   "file": "sprites/orb-lit.png",
+   "title": "Шар светится",
+   "caption": "Единственный источник «магии»."
+  },
+  {
+   "file": "sprites/closeup-background.png",
+   "title": "Фон крупного плана",
+   "caption": "Для кадров 5–6."
+  },
+  {
+   "file": "sprites/paper-1.png",
+   "title": "Лист 1",
+   "caption": "Нарисован отдельно, неровные края."
+  },
+  {
+   "file": "sprites/demoness-k06-touch.png",
+   "title": "Поза героини: touch",
+   "caption": "Спрайт на общем холсте 480×270, жёсткие края."
+  },
+  {
+   "file": "sprites/demoness-k10-smile.png",
+   "title": "Поза героини: smile",
+   "caption": "Спрайт на общем холсте 480×270, жёсткие края."
+  },
+  {
+   "file": "sprites/demoness-k11-ready.png",
+   "title": "Поза героини: ready",
+   "caption": "Спрайт на общем холсте 480×270, жёсткие края."
+  },
+  {
+   "file": "storyboard/storyboard_sheet_v2.png",
+   "title": "Раскадровка v2",
+   "caption": "Основной документ для брифа анимации: позы, камера, окружение."
+  },
+  {
+   "file": "storyboard/animatic_v2.gif",
+   "title": "Аниматик v2",
+   "caption": "Тайминги кадров раскадровки."
+  }
+ ]
+}

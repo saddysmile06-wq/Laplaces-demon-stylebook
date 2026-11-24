@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Лаплас: стайлбук и демо</title>
+<style>
+:root{--bg:#0f0c14;--panel:#181321;--ink:#e8e0f2;--mute:#9a8fb0;--acc:#b79cff;--line:#2a2238}
+*{box-sizing:border-box}html{color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,"Segoe UI",sans-serif}
+header{max-width:1180px;margin:0 auto;padding:36px 24px 8px}
+h1{font-size:30px;margin:0 0 4px}.sub{color:var(--mute);margin:0;max-width:70ch}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;max-width:1180px;margin:18px auto 0;padding:0 24px;position:sticky;top:0;background:var(--bg);z-index:5;padding-top:8px;padding-bottom:8px}
+.tabs button{background:none;color:var(--acc);border:1px solid var(--line);padding:6px 16px;border-radius:999px;font:inherit;font-size:14px;cursor:pointer}
+.tabs button.on,.tabs button:hover{background:var(--panel)}
+main{max-width:1180px;margin:0 auto;padding:12px 24px 80px}
+.pane{display:none}.pane.on{display:block}
+h2{font-size:22px;margin:28px 0 6px;border-bottom:1px solid var(--line);padding-bottom:6px}
+.intro{color:var(--mute);margin:6px 0 16px;max-width:75ch}
+.bar{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}
+input,select,textarea{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font:inherit}
+textarea{width:100%;min-height:220px;font:13px/1.5 ui-monospace,Consolas,monospace}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+figure{margin:0;background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.img{background:#07050b;display:flex;align-items:center;justify-content:center;min-height:170px;max-height:320px;cursor:zoom-in}
+.img img{max-width:100%;max-height:320px;image-rendering:pixelated;display:block}
+figcaption{padding:10px 14px}figcaption b{display:block}figcaption span{color:var(--mute);font-size:14px}
+figcaption small{display:block;margin-top:6px;color:#6c6382;font-size:12px;word-break:break-all}
+.badge{display:inline-block;margin-left:6px;color:var(--acc);font-size:11px;border:1px solid var(--line);border-radius:6px;padding:0 6px}
+.forms{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px}
+.card h3{margin:0 0 8px}.card p{margin:6px 0;color:var(--mute);font-size:14px}.card p b{color:var(--ink)}
+.sw{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.sw button{border:1px solid var(--line);border-radius:10px;background:var(--panel);color:var(--ink);padding:0;cursor:pointer;text-align:left;font:inherit;overflow:hidden}
+.sw i{display:block;height:72px}.sw span{display:block;padding:6px 10px;font-size:13px}.sw small{display:block;color:var(--mute);font-size:11px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:700px){.row{grid-template-columns:1fr}}
+.btn{background:var(--acc);color:#120b1d;border:0;border-radius:8px;padding:8px 16px;font:inherit;font-weight:600;cursor:pointer}
+.hint{color:var(--mute);font-size:14px}
+#lb{position:fixed;inset:0;background:rgba(5,3,9,.94);display:none;align-items:center;justify-content:center;z-index:9;cursor:zoom-out;padding:16px}
+#lb.on{display:flex}#lb img{max-width:100%;max-height:100%;image-rendering:pixelated}
+</style>
+</head>
+<body>
+<header>
+<h1>Лаплас: стайлбук и демо</h1>
+<p class="sub">Канон маскота «Демон Лапласа», галерея артов и анимаций, палитра и конструктор промптов для нейросети. Работает офлайн: открой этот файл двойным кликом (картинки подтягиваются из соседней папки <code>assets/</code>).</p>
+</header>
+<div class="tabs" id="tabs"></div>
+<main>
+<section class="pane" id="p-gallery"></section>
+<section class="pane" id="p-forms"></section>
+<section class="pane" id="p-palette"></section>
+<section class="pane" id="p-prompt"></section>
+</main>
+<div id="lb"><img alt=""></div>
+<script id="data" type="application/json">/*DATA*/</script>
+<script>
+const D = JSON.parse(document.getElementById('data').textContent);
+const $ = (s, r = document) => r.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const TABS = [['gallery','Галерея'],['forms','Формы'],['palette','Палитра'],['prompt','Конструктор промптов']];
+const tabs = $('#tabs');
+TABS.forEach(([id,t]) => { const b = document.createElement('button'); b.textContent = t; b.dataset.id = id; b.onclick = () => show(id); tabs.append(b); });
+function show(id){ document.querySelectorAll('.pane').forEach(p => p.classList.toggle('on', p.id === 'p-'+id)); tabs.querySelectorAll('button').forEach(b => b.classList.toggle('on', b.dataset.id === id)); history.replaceState(null,'','#'+id); }
+
+// --- Галерея
+(function(){
+  const el = $('#p-gallery');
+  const opts = D.collections.map(c => `<option value="${c.slug}">${esc(c.title)}</option>`).join('');
+  el.innerHTML = `<div class="bar"><select id="gc"><option value="">Все разделы</option>${opts}</select><input id="gq" placeholder="Поиск по названию и подписи"></div><div id="gout"></div>`;
+  function draw(){
+    const c = $('#gc').value, q = $('#gq').value.toLowerCase();
+    $('#gout').innerHTML = D.collections.filter(x => !c || x.slug === c).map(col => {
+      const items = col.items.filter(i => !q || (i.title + ' ' + i.caption).toLowerCase().includes(q));
+      if (!items.length) return '';
+      return `<h2>${esc(col.title)}</h2><p class="intro">${esc(col.intro)}</p><div class="grid">` + items.map(i => {
+        const src = `../assets/${col.slug}/${i.file}`;
+        return `<figure><div class="img"><img loading="lazy" src="${src}" alt="${esc(i.title)}"></div><figcaption><b>${esc(i.title)}${i.plugin ? '<span class="badge">в плагине</span>' : ''}${i.approved ? '<span class="badge">утверждено</span>' : ''}</b><span>${esc(i.caption)}</span><small>${esc(col.slug + '/' + i.file)}</small></figcaption></figure>`;
+      }).join('') + '</div>';
+    }).join('') || '<p class="hint">Ничего не найдено.</p>';
+  }
+  $('#gc').onchange = draw; $('#gq').oninput = draw; draw();
+})();
+
+// --- Формы
+(function(){
+  const f = D.character.forms;
+  $('#p-forms').innerHTML = `<h2>Три формы</h2><p class="intro">Лицо, волосы, рога, уши и кончик хвоста одинаковы во всех формах. Данные из <code>canon/character.json</code>.</p><div class="forms">` +
+    Object.entries(f).map(([id,x]) => `<div class="card"><h3>${esc(id)}</h3><p><b>Кто:</b> ${esc(x.label)}</p><p><b>Использование:</b> ${esc(x.use)}</p><p><b>Кадр:</b> ${esc(x.framing)}</p><p><b>Одежда:</b> ${esc(x.outfit)}</p><p><b>Референс:</b> <code>${esc(x.ref)}</code></p></div>`).join('') + '</div>' +
+    `<h2>Общие правила</h2><div class="card"><p><b>Стиль:</b> ${esc(D.character.style)}</p><p><b>Канон:</b> ${esc(D.character.core)}</p><p><b>Правила:</b> ${esc(D.character.rules)}</p></div>`;
+})();
+
+// --- Палитра
+(function(){
+  const p = D.palette;
+  $('#p-palette').innerHTML = `<h2>Палитра (до ${p.max_colors} цветов)</h2><p class="intro">${esc(p.mood)}. Клик копирует hex.</p><div class="sw">` +
+    p.colors.map(c => `<button data-hex="${c.hex}"><i style="background:${c.hex}"></i><span>${c.hex}<small>${esc(c.id)}: ${esc(c.role)}</small></span></button>`).join('') + '</div>';
+  document.querySelectorAll('.sw button').forEach(b => b.onclick = () => { navigator.clipboard && navigator.clipboard.writeText(b.dataset.hex); b.querySelector('span').firstChild.textContent = 'скопировано'; setTimeout(() => b.querySelector('span').firstChild.textContent = b.dataset.hex, 900); });
+})();
+
+// --- Конструктор промптов
+(function(){
+  const ch = D.character, el = $('#p-prompt');
+  el.innerHTML = `<h2>Конструктор промптов</h2><p class="intro">Собирает промпт из канона: стиль + персонаж + одежда и кадр формы + правила + поза. Вставляй в ChatGPT вместе с референсом.</p>
+  <div class="bar"><select id="pf">${Object.keys(ch.forms).map(f => `<option>${f}</option>`).join('')}</select><select id="pp"></select></div>
+  <p class="hint" id="pr"></p><div class="row"><textarea id="po" readonly></textarea><div><p class="hint">Свою позу можно дописать:</p><textarea id="pc" style="min-height:90px" placeholder="например: sitting on the floor, reading a book, tail curled"></textarea><p><button class="btn" id="cp">Копировать промпт</button></p></div></div>`;
+  function poses(){ const f = $('#pf').value; $('#pp').innerHTML = D.poses.filter(p => p.form === f).map(p => `<option value="${p.id}">${p.id} (${p.kind})</option>`).join('') + '<option value="">— своя поза —</option>'; build(); }
+  function build(){
+    const f = $('#pf').value, x = ch.forms[f], p = D.poses.find(q => q.id === $('#pp').value), own = $('#pc').value.trim();
+    const parts = [ch.style, ch.core, x.outfit, x.framing, ch.rules, own || (p ? p.prompt : '')];
+    $('#po').value = parts.filter(Boolean).join(' ');
+    $('#pr').textContent = 'Референс: ' + x.ref + (x.ref_fallback ? ' (запасной: ' + x.ref_fallback + ')' : '') + '.';
+  }
+  $('#pf').onchange = poses; $('#pp').onchange = build; $('#pc').oninput = build;
+  $('#cp').onclick = () => { $('#po').select(); navigator.clipboard ? navigator.clipboard.writeText($('#po').value) : document.execCommand('copy'); $('#cp').textContent = 'Скопировано'; setTimeout(() => $('#cp').textContent = 'Копировать промпт', 900); };
+  poses();
+})();
+
+// --- Лайтбокс
+const lb = $('#lb');
+document.addEventListener('click', e => { const d = e.target.closest('.img'); if (d) { $('img', lb).src = d.querySelector('img').src; lb.classList.add('on'); } });
+lb.onclick = () => lb.classList.remove('on');
+addEventListener('keydown', e => { if (e.key === 'Escape') lb.classList.remove('on'); });
+show((location.hash || '#gallery').slice(1).replace(/[^a-z]/g,'') || 'gallery');
+</script>
+</body>
+</html>

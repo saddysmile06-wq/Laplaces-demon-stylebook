@@ -1,0 +1,17 @@
+{
+  "id": "oracle-v3",
+  "title": "«Лаплас проверяет судьбу» (v3)",
+  "caption": "Комната под 45°, шар, листы-ответы. Загрузочный экран и индикатор долгой операции. Цикл, кадр 93 — «готово». Сделано в ChatGPT-ветке.",
+  "form": "casual",
+  "status": "final",
+  "loop": true,
+  "freeze_frame": 93,
+  "size": [480, 270],
+  "frames": 110,
+  "source": "source/laplace-oracle.aseprite",
+  "sheet": "export/laplace-oracle-sheet.png",
+  "sheet_data": "export/laplace-oracle-sheet.json",
+  "preview": "export/laplace-oracle.webp",
+  "extras": ["export/laplace-oracle.gif", "export/laplace-oracle@2x.gif", "export/ready.png", "export/timeline.json"],
+  "related": "assets/oracle/ (спрайты и раскадровка), pipeline/oracle-v3/ (сборка)"
+}

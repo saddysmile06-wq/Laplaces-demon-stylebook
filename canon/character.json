@@ -1,0 +1,37 @@
+{
+  "style": "Low-resolution pixel art sprite as in an old 16-bit game: the whole figure is built from clearly visible large square pixels (about 192 pixels tall), flat color blocks with simple hard-edged pixel shading, no smooth gradients, no anti-aliasing, no soft glow, no vector or anime-illustration look. Limited cool purple-violet palette (about 16 colors), dark gothic cozy mood, same pixel density and shading style as the reference.",
+  "core": "The same original character as in the reference image: a young adult demoness with violet-grey skin, long dark purple-brown hair with side-swept bangs, TWO CLEARLY VISIBLE small curved dark horns sticking out of the top of her hair, long pointed ears, large calm half-lidded violet eyes, a slim pointed devil tail ending in an arrowhead tip. Keep her face, hair, horns, ears and tail tip identical in every image and every form.",
+  "rules": "Single character only. Transparent background. Not sexualised for the casual form: relaxed, everyday, cozy poses only. No weapons, no text, no watermark, no extra limbs unless the form says so. Bat-like wings appear ONLY in the winged form. Always tasteful and non-explicit.",
+  "forms": {
+    "casual": {
+      "label": "Повседневная: спокойная, шорты и бикини, бегает по комнате, зажигает свечи, раскладывает книги",
+      "ref": "assets/references/ref_casual_sprite.png",
+      "framing": "Full body, drawn LARGE: head to feet fully visible including both feet, character fills about 85% of the image height, small empty margin below the feet.",
+      "outfit": "wearing the same outfit as in the reference: a dark violet bikini-style top and dark violet shorts with a thigh strap, barefoot. Relaxed, playful, calm mood.",
+      "use": "чат, повторение карточек, загрузочный экран, пустые состояния"
+    },
+    "mecha": {
+      "label": "Меха: плащ с капюшоном, механические кисти, серьёзный тон, читает и разбирает листы",
+      "ref": "assets/references/ref_mecha.png",
+      "framing": "Waist-up, drawn LARGE, standing behind a desk of old books, face clearly visible with many pixels.",
+      "outfit": "wearing the same outfit as in the reference: a dark hooded cloak with a round clasp and chains, belted dark tunic, wide sleeves, and mechanical robotic metal forearms and hands. Serious, focused, calm mood.",
+      "use": "Auto Inbox, индексация, анализ, длительные и серьёзные задачи"
+    },
+    "demon": {
+      "label": "Полная демоническая: щупальца, множество механических рук, сидит и активно разбирает данные",
+      "ref": "assets/originals/archivist-among-books.png",
+      "ref_fallback": "assets/references/ref_mecha.png",
+      "framing": "Seated at the centre of a heap of books, wide composition showing the whole figure and all her limbs, drawn LARGE.",
+      "outfit": "her full demonic form: the dark hooded cloak half dissolved, many long dark tentacles and numerous extra mechanical robotic arms growing from her back and shoulders, each arm sorting, writing, stamping or holding glowing sheets of paper at once, glowing violet eyes, intense focused mood. The extra limbs are intended in this form.",
+      "use": "фон при сильной нагрузке: массовая обработка, ошибки, «лютый движняк»"
+    },
+    "winged": {
+      "label": "Крылатая (pin-up): летучие крылья, чулки и перчатки, фан-арты, обложки и промо; сидит на косе-посохе или лежит",
+      "ref": "assets/from-regina/character/396.jpg",
+      "ref_fallback": "assets/from-regina/character/468.jpg",
+      "framing": "Full body or three-quarter, drawn LARGE, a stylish glamour pin-up pose, whole figure and both wings visible, dark background.",
+      "outfit": "wearing a dark violet lingerie-style set, dark purple thigh-high stockings and long dark gloves, with two large bat-like wings with violet membranes growing from her back, the arrowhead tail visible. Confident, playful, slightly mischievous mood. Tasteful and non-explicit.",
+      "use": "фан-арты, обложки, промо, эмблемы; не для интерфейса плагина по умолчанию. Утверждённые примеры: assets/from-regina/character/392–401, 417"
+    }
+  }
+}

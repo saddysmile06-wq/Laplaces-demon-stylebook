@@ -1,0 +1,173 @@
+{
+ "_comment": "form: casual | mecha | demon (по умолчанию casual). kind: emotion = лицо крупнее; pose = ключевая поза для анимации; scene = комната / фон. Свои записи: id, form, kind, prompt.",
+ "items": [
+  {
+   "id": "emo_neutral",
+   "form": "casual",
+   "kind": "emotion",
+   "prompt": "Standing front view, calm neutral expression, half-lidded eyes, hands relaxed."
+  },
+  {
+   "id": "emo_happy",
+   "form": "casual",
+   "kind": "emotion",
+   "prompt": "Standing front view, a clearly visible wide happy smile with open mouth, bright eyes, tail curled up cheerfully."
+  },
+  {
+   "id": "emo_smug",
+   "form": "casual",
+   "kind": "emotion",
+   "prompt": "Standing front view, smug confident smirk, one eyebrow raised, hand on hip."
+  },
+  {
+   "id": "emo_embarrassed",
+   "form": "casual",
+   "kind": "emotion",
+   "prompt": "Standing front view, embarrassed, looking away, clear blush on cheeks, hands clasped in front."
+  },
+  {
+   "id": "emo_sleepy",
+   "form": "casual",
+   "kind": "emotion",
+   "prompt": "Standing front view, sleepy, eyes almost closed, big yawn, tail drooping."
+  },
+  {
+   "id": "emo_surprised",
+   "form": "casual",
+   "kind": "emotion",
+   "prompt": "Standing front view, very surprised, wide round eyes, open mouth, tail standing straight up."
+  },
+  {
+   "id": "emo_annoyed",
+   "form": "casual",
+   "kind": "emotion",
+   "prompt": "Standing front view, annoyed, flat unimpressed stare, arms crossed, tail flicking."
+  },
+  {
+   "id": "emo_thinking",
+   "form": "casual",
+   "kind": "emotion",
+   "prompt": "Standing front view, thinking, finger on chin, eyes looking up and to the side."
+  },
+  {
+   "id": "pose_idle_side",
+   "form": "casual",
+   "kind": "pose",
+   "prompt": "Side view facing right, standing idle, relaxed posture, tail hanging behind. Feet on the same ground line."
+  },
+  {
+   "id": "pose_walk_contact",
+   "form": "casual",
+   "kind": "pose",
+   "prompt": "Side view facing right, walking cycle key frame 'contact': front foot heel down, back foot toe pushing off, arms swinging opposite to legs, tail trailing. Feet on a flat ground line."
+  },
+  {
+   "id": "pose_walk_passing",
+   "form": "casual",
+   "kind": "pose",
+   "prompt": "Side view facing right, walking cycle key frame 'passing': legs crossing under the body, body slightly raised, arms near the sides, tail trailing. Feet on a flat ground line."
+  },
+  {
+   "id": "pose_pick_book",
+   "form": "casual",
+   "kind": "pose",
+   "prompt": "Side view facing right, bending forward at the waist and picking up a thick old book from the floor with both hands, knees slightly bent."
+  },
+  {
+   "id": "pose_carry_book",
+   "form": "casual",
+   "kind": "pose",
+   "prompt": "Side view facing right, walking carefully while carrying a stack of two thick old books against her chest with both arms."
+  },
+  {
+   "id": "pose_place_book",
+   "form": "casual",
+   "kind": "pose",
+   "prompt": "Side view facing right, leaning forward slightly and placing a thick old book on top of a stack at hip height."
+  },
+  {
+   "id": "pose_light_candle",
+   "form": "casual",
+   "kind": "pose",
+   "prompt": "Side view facing right, standing on tiptoe, one arm raised, holding a tiny flame at her fingertip to light a tall candle, other hand behind her back, tail balancing."
+  },
+  {
+   "id": "pose_sit_read",
+   "form": "casual",
+   "kind": "pose",
+   "prompt": "Side view facing right, sitting on the floor with knees up, reading an open book on her lap, tail curled around her feet."
+  },
+  {
+   "id": "mecha_idle",
+   "form": "mecha",
+   "kind": "pose",
+   "prompt": "Front view, standing calmly behind the desk, mechanical hands resting open in front of her, eyes looking straight ahead, serious."
+  },
+  {
+   "id": "mecha_read",
+   "form": "mecha",
+   "kind": "pose",
+   "prompt": "Front view, holding a glowing sheet of paper in one mechanical hand and reading it, eyes down on the sheet."
+  },
+  {
+   "id": "mecha_gesture",
+   "form": "mecha",
+   "kind": "pose",
+   "prompt": "Front view, one mechanical hand raised in a precise gesture as if sorting floating papers, eyes focused on the viewer."
+  },
+  {
+   "id": "mecha_focus",
+   "form": "mecha",
+   "kind": "emotion",
+   "prompt": "Front view, eyes narrowed with intense focus, faint violet glow in the eyes, hood shadowing the forehead."
+  },
+  {
+   "id": "mecha_blink",
+   "form": "mecha",
+   "kind": "emotion",
+   "prompt": "Front view, eyes closed in a blink, same pose as calm idle."
+  },
+  {
+   "id": "demon_work",
+   "form": "demon",
+   "kind": "pose",
+   "prompt": "Front view, working intensely: four mechanical arms and several tentacles sort, stamp and write on glowing papers at the same time, eyes glowing."
+  },
+  {
+   "id": "demon_idle",
+   "form": "demon",
+   "kind": "pose",
+   "prompt": "Front view, resting between tasks: tentacles and extra arms folded calmly around her, eyes half closed, faint glow."
+  },
+  {
+   "id": "scene_room_wide",
+   "form": "casual",
+   "kind": "scene",
+   "prompt": "Extend this room to a wider cozy gothic study in the same pixel art style: a long stone floor line, left and right walls with a tall arched window, two bookshelves, more stacks of old books, a skull, several candles on stands and on books at different heights, crystals. Keep the arch, the candles, the skull and the book stacks from the reference exactly as they are. No character in the image. Dark near-black violet background."
+  },
+  {
+   "id": "scene_room_empty",
+   "form": "mecha",
+   "kind": "scene",
+   "prompt": "Remove the character, all floating papers and schematic sheets from this image. Keep the room exactly as it is: the arched halo, candles, skulls, book stacks, open books, hourglass, hanging armillary sphere and chains. Fill the space where the character stood with plain dark background. Same pixel art style, same palette."
+  },
+  {
+   "id": "winged_lying_legs_up",
+   "form": "winged",
+   "kind": "pose",
+   "prompt": "Reclining on her side, propped on one elbow, legs raised and crossed in the air, wings spread behind her, tail curled below, playful half-lidded smile."
+  },
+  {
+   "id": "winged_sit_scythe",
+   "form": "winged",
+   "kind": "pose",
+   "prompt": "Sitting sideways on a long scythe-like staff, legs crossed, tail wrapped around the shaft, wings half-open, looking at the viewer with a calm smirk."
+  },
+  {
+   "id": "winged_hold_skull",
+   "form": "winged",
+   "kind": "pose",
+   "prompt": "Three-quarter view, holding a pale skull with violet crystals in both hands and looking at it with quiet curiosity, wings folded behind."
+  }
+ ]
+}

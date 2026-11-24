@@ -1,0 +1,472 @@
+{
+  "canvas": [
+    480,
+    270
+  ],
+  "format": "RGBA PNG",
+  "generation_calls": 0,
+  "assets": {
+    "orb-dim": {
+      "file": "orb-dim.png",
+      "kind": "sprite",
+      "bbox": [
+        164,
+        159,
+        195,
+        196
+      ],
+      "pivot": [
+        179,
+        174
+      ],
+      "trim_offset": [
+        164,
+        159
+      ],
+      "source": "C:\\Obsidian-Data\\Storyboards\\demoness-oracle\\production-v2\\final\\background.png",
+      "sha256": "5e1d3a6dfc1fee8316f209c5d1a176067aa9c1dc357ed87d3b5fceae8381d409",
+      "semi_alpha_pixels": 0
+    },
+    "orb-lit": {
+      "file": "orb-lit.png",
+      "kind": "sprite",
+      "bbox": [
+        164,
+        159,
+        195,
+        196
+      ],
+      "pivot": [
+        179,
+        174
+      ],
+      "trim_offset": [
+        164,
+        159
+      ],
+      "source": "C:\\Obsidian-Data\\Storyboards\\demoness-oracle\\production-v1\\raw\\k07-process.png",
+      "sha256": "05d44180c0e32ec30d3c7e2f35d338db19fcac2169ed9997ce5a7adcbb56de23",
+      "semi_alpha_pixels": 0
+    },
+    "books": {
+      "file": "books.png",
+      "kind": "sprite",
+      "bbox": [
+        116,
+        188,
+        165,
+        219
+      ],
+      "pivot": [
+        140,
+        211
+      ],
+      "trim_offset": [
+        116,
+        188
+      ],
+      "source": "C:\\Obsidian-Data\\Storyboards\\demoness-oracle\\production-v2\\final\\background.png",
+      "sha256": "e332b76a2f80c2098cccf3c4682d9035ff25150efc6653908ac90c5aa55f88d9",
+      "semi_alpha_pixels": 0
+    },
+    "table": {
+      "file": "table.png",
+      "kind": "sprite",
+      "bbox": [
+        86,
+        178,
+        224,
+        270
+      ],
+      "pivot": [
+        130,
+        234
+      ],
+      "trim_offset": [
+        86,
+        178
+      ],
+      "source": "C:\\Obsidian-Data\\Storyboards\\demoness-oracle\\production-v2\\final\\background.png",
+      "sha256": "3625a831ef27bde04b9c78273d452ea3aa2ba1995b683b455c2677f29510190c",
+      "semi_alpha_pixels": 0
+    },
+    "background-floor": {
+      "file": "background-floor.png",
+      "kind": "background",
+      "bbox": [
+        0,
+        0,
+        480,
+        270
+      ],
+      "pivot": [
+        0,
+        0
+      ],
+      "trim_offset": [
+        0,
+        0
+      ],
+      "source": "C:\\Obsidian-Data\\Storyboards\\demoness-oracle\\production-v2\\final\\background.png",
+      "sha256": "91a7c8069bb1e526f5b18ee763413ab7cafc61af6448510b53267917b495516c",
+      "semi_alpha_pixels": 0
+    },
+    "orb-glow": {
+      "file": "orb-glow.png",
+      "kind": "light",
+      "bbox": [
+        150,
+        151,
+        209,
+        198
+      ],
+      "pivot": [
+        179,
+        174
+      ],
+      "trim_offset": [
+        150,
+        151
+      ],
+      "source": "deterministic stepped falloff",
+      "sha256": "d3af135549a28e7b5d10e80369c4298d47a32fb0dd222743948f41ebe4ed9d42",
+      "semi_alpha_pixels": 2225
+    },
+    "demoness-k02-walk-contact": {
+      "file": "demoness-k02-walk-contact.png",
+      "kind": "sprite",
+      "bbox": [
+        276,
+        67,
+        394,
+        222
+      ],
+      "pivot": [
+        315,
+        222
+      ],
+      "trim_offset": [
+        276,
+        67
+      ],
+      "source": "C:\\Obsidian-Data\\Storyboards\\demoness-oracle\\production-v2\\layers\\k02-walk-contact.png",
+      "sha256": "32e8661be2e888e1e04d8a8f0748334c0797b5b4dfebf7cc45316ea26046d69b",
+      "semi_alpha_pixels": 0
+    },
+    "demoness-k03-walk-down": {
+      "file": "demoness-k03-walk-down.png",
+      "kind": "sprite",
+      "bbox": [
+        272,
+        69,
+        405,
+        222
+      ],
+      "pivot": [
+        315,
+        222
+      ],
+      "trim_offset": [
+        272,
+        69
+      ],
+      "source": "C:\\Obsidian-Data\\Storyboards\\demoness-oracle\\production-v2\\layers\\k03-walk-down.png",
+      "sha256": "cbe781779fed6269e36c1641c5075ea879d93c50b8d215e289e9859f02e12c84",
+      "semi_alpha_pixels": 0
+    },
+    "demoness-k04-walk-passing": {
+      "file": "demoness-k04-walk-passing.png",
+      "kind": "sprite",
+      "bbox": [
+        279,
+        66,
+        395,
+        222
+      ],
+      "pivot": [
+        315,
+        222
+      ],
+      "trim_offset": [
+        279,
+        66
+      ],
+      "source": "C:\\Obsidian-Data\\Storyboards\\demoness-oracle\\production-v2\\layers\\k04-walk-passing.png",
+      "sha256": "65b6c2f3c6cab5bf76cb14d5eb2c4785f9d9b3aa99924924e94e33bfed5b0d0f",
+      "semi_alpha_pixels": 0
+    },
+    "demoness-k05-walk-contact-other": {
+      "file": "demoness-k05-walk-contact-other.png",
+      "kind": "sprite",
+      "bbox": [
+        272,
+        67,
+        393,
+        222
+      ],
+      "pivot": [
+        315,
+        222
+      ],
+      "trim_offset": [
+        272,
+        67
+      ],
+      "source": "C:\\Obsidian-Data\\Storyboards\\demoness-oracle\\production-v2\\layers\\k05-walk-contact-other.png",
+      "sha256": "9d974af8bcaca2412ec5d4d40e23e1ebb76e63c58284fd4c317737880bcc6ca6",
+      "semi_alpha_pixels": 0
+    },
+    "demoness-k06-touch": {
+      "file": "demoness-k06-touch.png",
+      "kind": "sprite",
+      "bbox": [
+        169,
+        78,
+        317,
+        248
+      ],
+      "pivot": [
+        241,
+        246
+      ],
+      "trim_offset": [
+        169,
+        78
+      ],
+      "source": "C:\\Obsidian-Data\\Storyboards\\demoness-oracle\\production-v2\\layers\\k06-touch.png",
+      "sha256": "ae16ecfa704b9c8cc650139245ea2d09fa7b5615f5e42fb9f5c4abf9e16a8235",
+      "semi_alpha_pixels": 0
+    },
+    "demoness-k07-process": {
+      "file": "demoness-k07-process.png",
+      "kind": "sprite",
+      "bbox": [
+        173,
+        77,
+        294,
+        249
+      ],
+      "pivot": [
+        241,
+        246
+      ],
+      "trim_offset": [
+        173,
+        77
+      ],
+      "source": "C:\\Obsidian-Data\\Storyboards\\demoness-oracle\\production-v2\\layers\\k07-process.png",
+      "sha256": "06519977546105533d4384721dab56f7cb9538c167c4c9c76185fe71f09654b7",
+      "semi_alpha_pixels": 0
+    },
+    "demoness-k11-ready": {
+      "file": "demoness-k11-ready.png",
+      "kind": "sprite",
+      "bbox": [
+        213,
+        70,
+        318,
+        249
+      ],
+      "pivot": [
+        241,
+        246
+      ],
+      "trim_offset": [
+        213,
+        70
+      ],
+      "source": "C:\\Obsidian-Data\\Storyboards\\demoness-oracle\\production-v2\\layers\\k11-ready.png",
+      "sha256": "863c0366f8e962a414e1e79cee7f171a9b755b316c7530e474566098119b93a9",
+      "semi_alpha_pixels": 0
+    },
+    "demoness-k08-eyes-v2": {
+      "file": "demoness-k08-eyes-v2.png",
+      "kind": "sprite",
+      "bbox": [
+        127,
+        25,
+        407,
+        270
+      ],
+      "pivot": [
+        266,
+        173
+      ],
+      "trim_offset": [
+        127,
+        25
+      ],
+      "source": "C:\\Obsidian-Data\\Storyboards\\demoness-oracle\\production-v2\\raw\\k08-eyes-v2.png",
+      "sha256": "45802a2092d057e4d80822f25548d37eb5492695497d271a90c8ed6474430305",
+      "semi_alpha_pixels": 0
+    },
+    "demoness-k09-look": {
+      "file": "demoness-k09-look.png",
+      "kind": "sprite",
+      "bbox": [
+        127,
+        29,
+        407,
+        270
+      ],
+      "pivot": [
+        266,
+        173
+      ],
+      "trim_offset": [
+        127,
+        29
+      ],
+      "source": "C:\\Obsidian-Data\\Storyboards\\demoness-oracle\\production-v2\\raw\\k09-look.png",
+      "sha256": "345d68995dbeddad180b19aaa65ad04723e66322428581ee0bda676107a7f5b2",
+      "semi_alpha_pixels": 0
+    },
+    "demoness-k10-smile": {
+      "file": "demoness-k10-smile.png",
+      "kind": "sprite",
+      "bbox": [
+        127,
+        29,
+        407,
+        270
+      ],
+      "pivot": [
+        266,
+        173
+      ],
+      "trim_offset": [
+        127,
+        29
+      ],
+      "source": "C:\\Obsidian-Data\\Storyboards\\demoness-oracle\\production-v2\\raw\\k10-smile.png",
+      "sha256": "689edf783f0839f9004e9a47f234ef803dcdcf7e8839122835fdc6ff67efafe6",
+      "semi_alpha_pixels": 0
+    },
+    "closeup-background": {
+      "file": "closeup-background.png",
+      "kind": "background",
+      "bbox": [
+        0,
+        0,
+        480,
+        270
+      ],
+      "pivot": [
+        0,
+        0
+      ],
+      "trim_offset": [
+        0,
+        0
+      ],
+      "source": "solid original backdrop tone",
+      "sha256": "6c81082490a31e850aa7dd082705fec7883209a0ed603be84e037f442cf421d6",
+      "semi_alpha_pixels": 0
+    },
+    "closeup-orb": {
+      "file": "closeup-orb.png",
+      "kind": "sprite",
+      "bbox": [
+        0,
+        222,
+        108,
+        270
+      ],
+      "pivot": [
+        34,
+        284
+      ],
+      "trim_offset": [
+        0,
+        222
+      ],
+      "source": "C:\\Obsidian-Data\\Storyboards\\demoness-oracle\\production-v2\\raw\\k09-look.png",
+      "sha256": "4a0e87844c31d6210dfc2784dcc63e2f7f657c6e806446ac3c826dd6c17cdbd1",
+      "semi_alpha_pixels": 0
+    },
+    "paper-1": {
+      "file": "paper-1.png",
+      "kind": "paper",
+      "size": [
+        20,
+        28
+      ],
+      "pivot": [
+        10,
+        14
+      ],
+      "bbox": [
+        0,
+        0,
+        20,
+        28
+      ],
+      "trim_offset": [
+        0,
+        0
+      ],
+      "source": "original pixel drawing in design-pages.py; no generation",
+      "sha256": "8f7552522a278899cf5ab515729c8cef81b148e55a67df43916d3fb099728965",
+      "semi_alpha_pixels": 0
+    },
+    "paper-2": {
+      "file": "paper-2.png",
+      "kind": "paper",
+      "size": [
+        24,
+        34
+      ],
+      "pivot": [
+        12,
+        17
+      ],
+      "bbox": [
+        0,
+        0,
+        24,
+        34
+      ],
+      "trim_offset": [
+        0,
+        0
+      ],
+      "source": "original pixel drawing in design-pages.py; no generation",
+      "sha256": "bee875dc5ad196d32f99032108f143f57644b25f00aa0d7687a011d0eca93214",
+      "semi_alpha_pixels": 0
+    },
+    "paper-3": {
+      "file": "paper-3.png",
+      "kind": "paper",
+      "size": [
+        21,
+        30
+      ],
+      "pivot": [
+        10,
+        15
+      ],
+      "bbox": [
+        0,
+        0,
+        21,
+        30
+      ],
+      "trim_offset": [
+        0,
+        0
+      ],
+      "source": "original pixel drawing in design-pages.py; no generation",
+      "sha256": "98beea4a4cfdfbf7a3aa37bba75e355fa174c84019d2c2c8b2d674ff9470e9c3",
+      "semi_alpha_pixels": 0
+    }
+  },
+  "reconstructed": [
+    "floor hidden behind table/books/orb",
+    "tabletop hidden behind books/orb"
+  ],
+  "note": "Hidden areas are local pixel reconstruction, not recovered original detail.",
+  "recomposition": {
+    "different_pixels": 0,
+    "max_channel_delta": 0
+  }
+}

@@ -1,0 +1,40 @@
+{
+ "frame": [
+  144,
+  144
+ ],
+ "frames": [
+  {
+   "i": 0,
+   "file": "aligned/01_pose1_rising.png",
+   "ms": 300
+  },
+  {
+   "i": 1,
+   "file": "aligned/02_pose2_standing.png",
+   "ms": 300
+  },
+  {
+   "i": 2,
+   "file": "aligned/03_pose3_stretching.png",
+   "ms": 600
+  },
+  {
+   "i": 3,
+   "file": "aligned/04_pose4_arms_down.png",
+   "ms": 300
+  },
+  {
+   "i": 4,
+   "file": "aligned/05_pose5_sitting_down.png",
+   "ms": 300
+  },
+  {
+   "i": 5,
+   "file": "aligned/06_pose6_sat.png",
+   "ms": 600
+  }
+ ],
+ "loop": true,
+ "ground_y": 136
+}
