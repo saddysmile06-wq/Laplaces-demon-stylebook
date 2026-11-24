@@ -9,7 +9,7 @@
 Делай это сам, по шагам, не спрашивая лишнего. Нужны Python 3.9+, git, git-lfs.
 
 1. Проверь инструменты: `python --version` (на macOS/Linux `python3`), `git --version`, `git lfs version`. Нет git-lfs: Windows `winget install GitHub.GitLFS`, macOS `brew install git-lfs`, Linux `sudo apt install git-lfs`. Нет Python: https://www.python.org/downloads/.
-2. Если проекта ещё нет на диске: `git lfs install`, затем `git clone <URL> laplace-mascot`, `cd laplace-mascot`. **Не качай ZIP**: в нём вместо картинок заглушки LFS.
+2. Если проекта ещё нет на диске: `git lfs install`, затем `git clone https://github.com/saddysmile06-wq/Laplaces-demon-stylebook.git laplace-mascot`, `cd laplace-mascot`. **Не качай ZIP**: в нём вместо картинок заглушки LFS.
 3. Одна команда делает всё остальное: `python tools/setup.py --serve` (macOS/Linux: `python3 ...`). Она проверит окружение, сама выполнит `git lfs pull`, создаст `.venv`, поставит Pillow, прогонит `validate`, `build`, `export` и поднимет сервер.
 4. Сервер блокирует терминал: запусти его в фоне и не жди завершения. Ссылка на демо: **http://localhost:8790/demo/**. Без сервера демо тоже открывается файлом `demo/index.html`.
 5. Только диагностика: `python tools/setup.py --check`. Строки `[FAIL]` содержат причину и что сделать.

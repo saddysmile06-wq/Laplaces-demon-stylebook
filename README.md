@@ -8,7 +8,7 @@
 
 **Вариант 1: через ИИ-агента (Claude Code, Codex, любой с доступом к терминалу).** Вставь в чат агента:
 
-> Установи проект: `git lfs install`, затем `git clone <URL> laplace-mascot`. Зайди в папку, прочитай `AGENTS.md` (раздел «Установка») и выполни его: `python tools/setup.py --serve`. Скажи, что получилось и дай ссылку на демо.
+> Установи проект: `git lfs install`, затем `git clone https://github.com/saddysmile06-wq/Laplaces-demon-stylebook.git laplace-mascot`. Зайди в папку, прочитай `AGENTS.md` (раздел «Установка») и выполни его: `python tools/setup.py --serve`. Скажи, что получилось и дай ссылку на демо.
 
 Агент сделает остальное сам: подтянет картинки из LFS, создаст `.venv`, поставит Pillow, соберёт демо и поднимет `http://localhost:8790/demo/`.
 
@@ -16,7 +16,7 @@
 
 ```powershell
 git lfs install
-git clone <URL> laplace-mascot
+git clone https://github.com/saddysmile06-wq/Laplaces-demon-stylebook.git laplace-mascot
 cd laplace-mascot
 start.bat                  # Windows: двойной клик по файлу start.bat
 # ./start.sh               # macOS / Linux

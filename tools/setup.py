@@ -73,7 +73,7 @@ def step_lfs(check_only: bool) -> None:
         say(True, "картинки на месте (не заглушки LFS)")
         return
     if not in_git:
-        say(False, "картинки — заглушки Git LFS, а папка не git-репозиторий (скачан ZIP?). Клонируй: git lfs install && git clone <URL>")
+        say(False, "картинки — заглушки Git LFS, а папка не git-репозиторий (скачан ZIP?). Клонируй: git lfs install && git clone https://github.com/saddysmile06-wq/Laplaces-demon-stylebook.git")
         return
     if shutil.which("git") is None:
         say(False, "git не найден. Установи Git: https://git-scm.com/downloads")
